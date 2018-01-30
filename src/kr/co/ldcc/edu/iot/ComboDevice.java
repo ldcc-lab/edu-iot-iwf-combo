@@ -40,13 +40,13 @@ public class ComboDevice {
         @Override
         public void excute(Map<String, String> cmd, NotifyResponse resp) {
           if ((req = cmd.get("switch")) != null) {
-            if ("1".equals(req)) {
+            if ("ON".equals(req)) {
               try {
                 rt.exec("gpio write 0 1");
               } catch (IOException e) {
                 System.out.println(e.getMessage());
               }
-            } else if ("0".equals(req)) {
+            } else if ("OFF".equals(req)) {
               try {
                 rt.exec("gpio write 0 0");
               } catch (IOException e) {
