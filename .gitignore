@@ -2,6 +2,3 @@
 /logs/
 /*.rexpfd
 /*.jar
-/.classpath
-/.project
-/.settings/
